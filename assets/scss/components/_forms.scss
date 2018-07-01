@@ -1,0 +1,138 @@
+label {
+  display: block;
+  font-size: rem(18px);
+  font-family: $font-family-base-semibold;
+  @media (max-width: 1440px) {
+    font-size: rem(14px);
+  }
+}
+input[type="text"],
+input[type="text"]:focus,
+input[type="email"],
+input[type="email"]:focus,
+input[type="password"],
+input[type="password"]:focus {
+  width: 100%;
+  padding: rem(32px) rem(13px);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-size: rem(18px);
+  font-family: $font-family-base-light;
+  resize: vertical;
+  max-width: rem(454px);
+  box-sizing: border-box;
+  outline: none;
+  @media (max-width: 1440px) {
+    padding: rem(16px) rem(13px);
+  }
+}
+
+input[type="checkbox"],
+input[type="checkbox"]:focus {
+  margin-right: rem(5px);
+  outline: none;
+}
+
+.web-app__form {
+  display: flex;
+  justify-content: space-between;
+  max-width: rem(454px);
+  box-sizing: border-box;
+}
+
+.web-app__form-icon--man {
+  background: url("../../static/img/icons/man.png") center center no-repeat;
+}
+
+.web-app__form-icon--woman {
+  background: url("../../static/img/icons/woman.png") center center no-repeat;
+}
+
+.web-app__form-icon--man,
+.web-app__form-icon--woman {
+  width: rem(36px);
+  height: rem(46px);
+  background-size: 30px 38px;
+}
+
+button[type="button"],
+button[type="button"]:focus {
+  background: white;
+  display: flex;
+  align-items: center;
+  font-size: rem(24px);
+  font-family: $font-family-base-semibold;
+  padding: rem(14.5px) rem(26px);
+  border-radius: rem(10px);
+  border: 1px solid $button-choice-border;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  @media (max-width: 1440px) {
+    padding: rem(5px) rem(26px);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background: $skyblue;
+    color: white;
+    outline: none;
+    & .web-app__form-icon--man {
+      background: url("../../static/img/icons/man-hover.png") center center no-repeat !important;
+    }
+    & .web-app__form-icon--woman {
+      background: url("../../static/img/icons/woman-hover.png") center center
+        no-repeat !important;
+    }
+  }
+}
+
+.web-app__form-button.web-app__form-button--active {
+  color: white;
+  background: $skyblue;
+}
+
+input[type="submit"],
+input[type="submit"]:focus {
+  background: white;
+  align-items: center;
+  font-size: rem(26px);
+  color: #aaa9a9;
+  margin: rem(17px) 0 0 0;
+  font-family: $font-family-base-semibold;
+  padding: rem(14.5px) rem(26px);
+  border-radius: rem(10px);
+  border: 1px solid $skyblue;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  &:hover,
+  &:focus {
+    outline: none;
+    background: $skyblue;
+    color: white;
+  }
+}
+
+.web-app__checkbox {
+  display: flex;
+  justify-content: space-between;
+  max-width: rem(400px);
+  font-size: rem(13px);
+  font-family: $font-family-secondary;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+  font-family: $font-family-base-light;
+}
+#errorCheckBox {
+  color: red;
+  font-family: $font-family-base-light;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Dating Web-app</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="76x76" href="static/img/favicon/android-chrome-72x72.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/png" href="static/img/favicon/favicon.ico"/>
+  <link rel="manifest" href="static/img/favicon//site.webmanifest">
+  <link rel="mask-icon" href="static/img/favicon//safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="static/css/main.css">
+
+</head>
+
+<body>
+  <section class="web-app">
+    <div class="web-app__left">
+      <div class="web-app__box">
+        <div class="web-app__percent">
+          <span class="web-app__number">33</span>%
+        </div>
+        <p class="web-app__result">
+          людей обращают внимание на
+          <span class="web-app__letter">Б</span>.
+        </p>
+      </div>
+      <div class="web-app__footer">
+        <ul class="web-app__list">
+          <li class="web-app__item">
+            <a href="#!" class="web-app__link">название1</a>
+          </li>
+          <li class="web-app__item">
+            <a href="#!" class="web-app__link">название2</a>
+          </li>
+          <li class="web-app__item">
+            <a href="#!" class="web-app__link">название3</a>
+          </li>
+          <li class="web-app__item">
+            <a href="#!" class="web-app__link">название4</a>
+          </li>
+          <li class="web-app__item">
+            <a href="#!" class="web-app__link">очень длинное название5</a>
+          </li>
+          <li class="web-app__item">
+            <a href="#!" class="web-app__link">очень длинное название6</a>
+          </li>
+          <li class="web-app__item">
+            <a href="#!" class="web-app__link">очень длинное название7</a>
+          </li>
+          <li class="web-app__item">
+            <a href="#!" class="web-app__link">очень длинное название8</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="web-app__right">
+
+      <div class="web-app__info">
+        <div class="web-app__wrapper">
+          <div class="web-app__heart"></div>
+          <h1 class="web-app__title">
+            Lorem ipsum
+          </h1>
+          <p class="web-app__description">Mauris vel nisi ac orci placerat semper. Aenean sapien massa.</p>
+          <div class="web-app__subtitle">
+            Lorem Ipsum?
+          </div>
+          <a href="#!" class="web-app__button web-app__button-main web-app__button--pink">
+            Начать
+          </a>
+          <a href="#!" class="web-app__button web-app__button-choice">
+            <span class="web-app__choice-man"></span>
+            Вариант
+            <span class="web-app__choice-letter">А</span>
+          </a>
+          <a href="#!" class="web-app__button web-app__button-choice">
+            <span class="web-app__choice-woman"></span>
+            Вариант
+            <span class="web-app__choice-letter">Б</span>
+          </a>
+          <a href="#!" class="web-app__button web-app__button-choice">
+            Вариант
+            <span class="web-app__choice-letter">В</span>
+          </a>
+          <a href="#!" class="web-app__button web-app__button-continue web-app__button--orange">Продолжить</a>
+          <form action="">
+            <label for="fname">Я ищу:</label>
+            <div class="web-app__form">
+              <button type="button" class="web-app__form-button">
+                <span class="web-app__form-icon--man"></span>
+                Вариант 1
+              </button>
+              <button type="button" class="web-app__form-button">
+                <span class="web-app__form-icon--woman"></span>
+                Вариант 2
+              </button>
+            </div>
+            <label for="fname">Ваше имя:</label>
+            <input type="text" name='name' id="inputName">
+            <label for="lname">Email:</label>
+            <input type="email" name='email' id="inputEmail">
+            <label for="country">Придумайте пароль:</label>
+            <input type="password" name='password' id="inputPassword">
+            <div class="web-app__checkbox">
+              <input type="checkbox" id="inputCheckBox" data-clicked="false"> Регистрируясь, вы подтверждаете, что вам уже исполнилось 18 лет и вы ознакомились с условиями пользования
+              сайтом.
+            </div>
+            <span id="errorCheckBox"></span>
+            <input type="submit" class="web-app__button web-app__button-continue" value="Продолжить">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="static/js/common.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+//configs
+@import "base/fonts";
+@import "base/functions";
+@import "base/variables";
+@import "base/normalize";
+@import "base/adjustments";
+
+//components
+@import "components/buttons";
+@import "components/forms";
+
+//app`s styles
+.web-app {
+  height: 100vh;
+  max-height: rem(1080px);
+  display: flex;
+  overflow: hidden;
+  .web-app__left {
+    overflow: hidden;
+    background: url("../../static/img/main-background.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 75.2vw;
+    min-width: rem(500px);
+    position: relative;
+    .web-app__footer {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.74);
+      display: block;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .web-app__right {
+    background: $pink;
+    width: 24.8vw;
+    position: relative;
+    .web-app__info {
+      position: absolute;
+      padding: rem(63px) 0 0 rem(63px);
+      bottom: 0;
+      left: 0;
+      width: inherit;
+      height: 80vh;
+      background: white;
+      border-left: 13px solid $pink;
+      @media (max-width: 1440px) {
+        padding: rem(54px) 0 0 rem(54px);
+        height: 90vh;
+      }
+      .web-app__wrapper {
+        position: relative;
+      }
+    }
+  }
+}
+
+.web-app__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(rem(-360px), rem(-214px));
+  @media (max-width: 1440px) {
+    transform: translate(rem(-265px), rem(-187px));
+  }
+  .web-app__percent,
+  .web-app__result {
+    font-family: $font-family-base-extrabold;
+    line-height: 1;
+  }
+  .web-app__percent {
+    font-size: rem(340px);
+    @media (max-width: 1440px) {
+      font-size: rem(250px);
+    }
+  }
+  .web-app__result {
+    font-size: rem(44px);
+    margin: 0;
+    @media (max-width: 1440px) {
+      font-size: rem(32px);
+    }
+  }
+}
+
+.web-app__heart {
+  position: absolute;
+  border-radius: 50%;
+  border: 9px solid $pink;
+  left: 0px;
+  top: 0;
+  transform: translate(rem(-106px), rem(16px));
+  width: rem(62px);
+  height: rem(62px);
+  background: white url("../../static/img//icons/heart-sprite.png") no-repeat;
+  background-position: rem(10px) rem(-174px);
+  z-index: 2;
+  @media (max-width: 1440px) {
+    transform: translate(rem(-99px), rem(16px));
+  }
+}
+
+.web-app__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: rem(12px) rem(80px);
+  margin: 0;
+  box-sizing: border-box;
+  width: inherit;
+
+  .web-app__link {
+    text-decoration: none;
+    color: $black;
+    font-size: rem(12px);
+    font-family: $font-family-base;
+    text-transform: uppercase;
+    margin: 0 rem(15px);
+    cursor: pointer;
+  }
+}
+
+.web-app__title {
+  font-size: rem(30.44px);
+  color: $pink;
+  text-transform: uppercase;
+  margin-top: 3.3vh;
+  max-width: 27.8vw;
+  @media (max-width: 1440px) {
+    max-width: 40vw;
+    margin-top: rem(-30px);
+  }
+}
+
+.web-app__description {
+  text-transform: uppercase;
+  font-size: rem(24px);
+  line-height: 1;
+  font-family: $font-family-base-semibold;
+  width: 18vw;
+  margin: rem(30px) 0 0;
+}
+
+.web-app__subtitle {
+  font-size: rem(33.21px);
+  margin: rem(170px) 0 rem(27px);
+  text-transform: uppercase;
+  @media (max-width: 1440px) {
+    font-size: rem(30px);
+  }
+}
+
+.web-app__choice-man,
+.web-app__choice-woman {
+  width: rem(36px);
+  height: rem(46px);
+  display: inline-block;
+  vertical-align: bottom;
+  padding-bottom: 2px;
+}
+.web-app__choice-man {
+  background: url("../../static/img/icons/man.png") center center no-repeat;
+}
+
+.web-app__choice-woman {
+  background: url("../../static/img/icons/woman.png") center center no-repeat;
+  background-size: 30px 38px;
+}
